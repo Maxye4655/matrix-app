@@ -2,16 +2,46 @@
 
 Terminal matrix rain with more options. Like cmatrix on steroids.
 
-## Install
+## Dependencies
+
+Requires `ncursesw` (wide-character ncurses) and a C compiler.
+
+### Arch
 
 ```sh
-make && sudo make install
+sudo pacman -S ncurses gcc
 ```
 
-Or run directly:
+### Debian / Ubuntu
+
+```sh
+sudo apt install libncursesw6 libncursesw-dev gcc
+```
+
+### Fedora
+
+```sh
+sudo dnf install ncurses ncurses-devel gcc
+```
+
+## Build from source
+
+```sh
+git clone https://github.com/Maxye4655/matrix-app.git
+cd matrix-app
+make
+```
+
+Run without installing:
 
 ```sh
 ./matrix
+```
+
+Or install system-wide:
+
+```sh
+sudo make install
 ```
 
 ## Options
